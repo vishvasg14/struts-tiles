@@ -1,0 +1,20 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
+
+
+<p> this is new hello2.jsp </p>
+
+this is header :
+
+<%@ include file="/WEB-INF/pages/header.jsp" %>
+
+
+this is body :
+
+<%@ include file="/WEB-INF/pages/body.jsp" %>
+
+go back to home :
+
+<a href="home">Go to Hello Page</a>
+
+
