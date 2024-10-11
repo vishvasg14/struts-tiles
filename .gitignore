@@ -8,8 +8,8 @@ target/
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
-.idea
-.smarttomcat
+.idea/
+.smarttomcat/
 *.iws
 *.iml
 *.ipr

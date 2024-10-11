@@ -7,21 +7,25 @@
     <definition name="fooLayout" template="/WEB-INF/pages/baseLayout.jsp">
         <put-attribute name="header" value="/pages/header"/>
         <put-attribute name="body" value="/pages/body"/>
+        <put-attribute name="footer" value="/pages/footer"/>
         <put-attribute name="body" value="" />
     </definition>
 
     <definition name="tilesWorks" extends="fooLayout">
         <put-attribute name="header" value="/WEB-INF/pages/header.jsp"/>
         <put-attribute name="body" value="/WEB-INF/pages/body.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/footer.jsp"/>
     </definition>
 
     <definition name="helloLayout" extends="fooLayout">
         <put-attribute name="header" value="/WEB-INF/pages/header.jsp"/>
         <put-attribute name="body" value="/WEB-INF/pages/hello.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/footer.jsp"/>
     </definition>
 
     <definition name="hello2Layout" extends="fooLayout">
         <put-attribute name="header" value="/WEB-INF/pages/header.jsp"/>
         <put-attribute name="body" value="/WEB-INF/pages/hello2.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/pages/footer.jsp"/>
     </definition>
 </tiles-definitions>

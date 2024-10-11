@@ -16,6 +16,9 @@
 
         <action name="helloLayout" class="com.example.HelloAction">
             <result name="success" type="tiles">helloLayout</result>
+        </action>
+
+        <action name="hello2Layout" class="com.example.HelloAction">
             <result name="success" type="tiles">hello2Layout</result>
         </action>
     </package>
