@@ -23,6 +23,17 @@
         </listener-class>
     </listener>
 
+    <!-- Custom Filter -->
+    <filter>
+        <filter-name>CustomFilter</filter-name>
+        <filter-class>configuration.CustomFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>CustomFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
     <filter>
         <filter-name>struts2</filter-name>
         <filter-class>org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter</filter-class>
@@ -32,6 +43,7 @@
         <filter-name>struts2</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
 
     <!--  &lt;!&ndash; Tiles Configuration &ndash;&gt;-->
     <!--  <context-param>-->

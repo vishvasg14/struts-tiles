@@ -10,6 +10,23 @@
             <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
         </result-types>
 
+
+
+        <interceptors>
+            <interceptor name="sampleInterceptor" class="testInterceptors.interceptors" />
+            <interceptor-stack name="customStack">
+                <interceptor-ref name="sampleInterceptor" />
+            </interceptor-stack>
+
+            <interceptor-stack name="paramStack">
+                <interceptor-ref name="params">
+                    <param name="ordered">true</param>
+                </interceptor-ref>
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="customStack" />
+
         <action name="execute" class="com.example.HelloAction" >
             <result name="success" type="tiles">tilesWorks</result>
         </action>
@@ -20,6 +37,10 @@
 
         <action name="hello2Layout" class="com.example.HelloAction">
             <result name="success" type="tiles">hello2Layout</result>
+        </action>
+
+        <action name="getSession" class="com.example.CustomSession" >
+            <result name="success" type="tiles">tilesWorks</result>
         </action>
     </package>
 </struts>

@@ -4,9 +4,11 @@
     <title>Body Page</title>
 </head>
 <body>
+    <div> This is the user name : <s:property value="#session.userName"/></div>
+
     <div style="color:blue; background-color:yellow"> this is body page
         <h1 >Body Page</h1>
-        <a href="helloLayout">Go to Hello Page</a>
+        <a href="helloLayout">Go to Hello Page</a><br>
         <a href="hello2Layout">Go to Hello2 Page</a>
     </div>
 </body>
