@@ -19,7 +19,7 @@ public class CustomFilter implements Filter {
         HttpServletResponse httpResponse = (HttpServletResponse) response;
 
         System.out.println("CustomFilter is being executed");
-        String paramValue = httpRequest.getParameter("paramName");
+        String paramValue = httpRequest.getParameter("name");
         String responseMessage = "Received parameter: " + paramValue;
         request.setAttribute("message", responseMessage);
         System.out.println("request: " + paramValue);

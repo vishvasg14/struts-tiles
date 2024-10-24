@@ -2,28 +2,22 @@ package com.example;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts2.action.SessionAware;
 
 import java.util.Map;
 
-public class CustomSession extends ActionSupport  implements SessionAware {
-//    private static final Map<String, Object> session = ActionContext.getContext().getSession();
+public class CustomSession extends ActionSupport {
+    private static final Map<String, Object> session = ActionContext.getContext().getSession();
 
-    private  Map<String, Object> session;
-
-    @Override
-    public void withSession(Map<String, Object> map) {
-        this.session = map;
-    }
+//    private  Map<String, Object> session;
 
     public String execute() {
 
         //set session name
-        session.put("userName", "testUser");
-
-        //get session stored name
-        String name= (String)session.get("userName");
-        System.out.println(name);
+//        session.put("userName", "testUser");
+//
+//        //get session stored name
+//        String name = (String)session.get("userName");
+//        System.out.println(name);
         return SUCCESS;
     }
 
